@@ -1,0 +1,11 @@
+# Segredos — NUNCA subir
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Outros
+*.log
