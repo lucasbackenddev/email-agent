@@ -1,12 +1,14 @@
-fastapi
-uvicorn[standard]
-sqlalchemy
-pydantic
-psycopg2-binary
-python-dotenv
-google-genai
-celery
-redis
-pytest
-httpx
-ruff
+# fastapi fixado: >=0.15x usa TestClient com httpx2 (nao instalado) e quebra o CI
+fastapi==0.143.2
+uvicorn[standard]==0.54.0
+sqlalchemy==2.1.6
+pydantic==2.14.1
+pydantic-settings==2.16.0
+psycopg2-binary==2.9.13
+python-dotenv==1.2.4
+google-genai==2.31.0
+celery==5.6.3
+redis==8.1.0
+pytest==9.1.1
+httpx==0.28.1
+ruff==0.17.2
