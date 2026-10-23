@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+# B008: Depends() em defaults é o padrão do FastAPI
+# BLE001: rotas capturam Exception de propósito para devolver 502 legível
+ignore = ["B008", "BLE001"]
